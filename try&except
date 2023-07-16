@@ -1,0 +1,15 @@
+hours = input("hours : ")
+rate = input ("rate : ")
+try:
+    hoursn = int(hours)
+except:
+    hoursn = -1
+try:
+    raten = int(rate)
+except:
+    raten = -1
+if hoursn > 0:
+    if raten > 0:
+        print ("nice work")
+    else:
+        print("please enter numeric input as 1,2,...")
