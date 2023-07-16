@@ -17,8 +17,9 @@ def computepay ():
             salary = overtime + regular
         else:
             salary = regular
+        print ("your salary is : ",salary)  
     else:
         print("incorrect input , please enter a correct input as 1,2,3,...")      
-    print ("your salary is : ",salary)  
+    
 
 computepay()
