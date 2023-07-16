@@ -1,0 +1,24 @@
+def computepay ():
+    hours = input ("enter ur hours : ")
+    rate = input ("enter ur hours rate : ")
+    try:
+        hoursn = float(hours)
+    except:
+        hoursn = -1
+    try:
+        raten = float(rate)
+    except:
+        raten = -1
+    if hoursn > 0:
+        print("input is correct")
+        if hoursn > 40:
+            regular = hoursn * raten
+            overtime = (hoursn - 40) * (raten * 0.5)
+            salary = overtime + regular
+        else:
+            salary = regular
+    else:
+        print("incorrect input , please enter a correct input as 1,2,3,...")      
+    print ("your salary is : ",salary)  
+
+computepay()
