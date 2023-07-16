@@ -17,7 +17,7 @@ def computepay ():
             salary = overtime + regular
         else:
             salary = hoursn * raten
-        print ("your salary is : ",salary)  
+        print ("your salary is : ",round(salary))  
     else:
         print("incorrect input , please enter a correct input as 1,2,3,...")      
     
