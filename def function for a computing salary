@@ -16,7 +16,7 @@ def computepay ():
             overtime = (hoursn - 40) * (raten * 0.5)
             salary = overtime + regular
         else:
-            salary = regular
+            salary = hoursn * raten
         print ("your salary is : ",salary)  
     else:
         print("incorrect input , please enter a correct input as 1,2,3,...")      
