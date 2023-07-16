@@ -1,0 +1,13 @@
+hours = input ("enter the hours : ")
+rate = input ("enter the rate : ")
+hoursn = float(hours)
+raten = float(rate)
+salary = hoursn * raten
+
+if hoursn > 40:
+    bonus = (hoursn - 40) * (raten * 0.5)
+    salary = salary + bonus
+else:
+    salary = hoursn * raten
+
+print ("your salary is : ", salary)
