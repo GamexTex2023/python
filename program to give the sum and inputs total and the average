@@ -1,0 +1,27 @@
+#   program that count the given numbers and giving the total and the total of the inputs and the average 
+#   with no breaking function when the inputs is not numeric :)
+inputsnum = 0
+sum = 0.0
+while True:
+        #  inputs as float
+        snum = input("please enter the num : ")
+        if snum == ("done"):
+            break
+        # try and except for not correct inputs
+        try:
+            fnum = float(snum)
+        except:
+            print(" please enter correct inputs as 1,2,3 or type done when finished")
+            continue
+
+        #  the inputs count
+
+        inputsnum = inputsnum + 1
+
+        #  the total
+
+        sum = sum + fnum
+
+#   the end result .
+
+print (sum, inputsnum , sum/inputsnum)
