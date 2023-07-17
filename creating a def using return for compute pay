@@ -1,0 +1,17 @@
+def computepay(hours, rate) :
+    if hours > 40:
+        regualar = hours * rate
+        overtime = (hours - 40) * (rate * 0.5)
+        total = regualar + overtime
+    else:
+        total = hours * rate
+    return total
+
+hoursn = input("enter hours : ")
+raten = input("enter rate : ")
+hoursf = float(hoursn)
+ratef = float(raten)
+
+total = computepay(hoursf,ratef)
+
+print("total is : ", total)
