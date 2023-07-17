@@ -1,0 +1,7 @@
+largestnum = 0
+print(largestnum)
+for num in [1,10,30,12,45,2,5,70,40,90,100]:
+    if num > largestnum:
+        largestnum = num
+    print("largest so far",largestnum)
+print("the largestnum is : ", largestnum)
