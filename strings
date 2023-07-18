@@ -1,0 +1,12 @@
+str = 'X-DSPAM-Confidence: 0.8475 '
+#   to find somthing inside the string .
+ipos = str.find(":")
+print(ipos)
+#   to slice something from the string and print it .
+piece = str[ipos+1:]
+print (piece)
+#   to get the floating point  numbers and remove the spaces .
+value = float(piece)
+print (value)
+#we change it to floating number as then we can add values to it as following .
+print (value+2)
